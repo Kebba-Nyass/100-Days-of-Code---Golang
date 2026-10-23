@@ -46,3 +46,17 @@ go run main.go
 cd Day_2_Variables
 go run main.go
 ```
+
+## Day 3: Taking user input
+**What I learned:**
+This lesson covers reading user input from the terminal with a small Pizza Rating program.
+
+Key takeaways
+bufio.NewReader(os.Stdin) creates a reader that takes input from the keyboard (standard input).
+reader.ReadString('\n') reads everything the user types until they press Enter. The '\n' is the delimiter, and it is included in the result.
+Go functions can return multiple values. ReadString returns both the input and an error: input, err := reader.ReadString('\n').
+The blank identifier _ lets me ignore a value I don't need, like input, _ := reader.ReadString('\n'). This is fine for learning, but real programs should handle the error.
+**Run it:**
+```bash
+cd Day_3_Input_From_User
+go run main.go
